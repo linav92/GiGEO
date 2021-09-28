@@ -1,0 +1,47 @@
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 0;
+
+    @include tablet-breakpoint{
+        padding: 2rem;
+    }
+
+    &__list{
+        list-style: none;
+        margin-bottom: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo{
+        width: 10%;
+        @include tablet-breakpoint{
+            width: 30%;
+        }
+    }
+
+    &__item{
+        margin: 0.5rem;
+    }
+
+    &__item--option{
+        @include tablet-breakpoint{
+            display: none;
+        }
+    }
+
+    &__item--toggle a i {
+        @include tablet-breakpoint {
+            font-size: 2rem;
+        }
+    }
+
+    &__link{
+        color: $black;
+        font-size: 1.25rem;
+    }
+    
+}
